@@ -1,29 +1,40 @@
 import { StyleSheet } from "react-native";
 
+
 export const HomePageStyle = StyleSheet.create({
-  container: {
+  gradientContainer: {
+    backgroundColor: "seagreen",
     display: "flex",
-    width: '90%', // width to 90% to keep it responsive
-    justifyContent: "space-evenly",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    paddingTop: 50,
+    flex: 1,
+    height : "100%",
+    width: "100%",
+    alignItems: "center",
+    paddingTop: 60,
   },
   mainContainer: {
-    backgroundColor: "seagreen",
+    backgroundColor : "seagreen",
+    display: "flex",
     flex: 1,
-    width : "100%",
+    height : "100%",
+    width: "100%",
     alignItems: "center",
+    paddingTop: 60,
+  },
+  container: {
+    display: "flex",
+    width: "90%",
+    height : "100%",
     justifyContent: "flex-start",
+    flexDirection: "column",
   },
   inputContainer: {
     marginTop: 20,
-    width: '90%',
+    width: "90%",
     paddingHorizontal: 20,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    gap : 10,
+    gap: 10,
   },
   centeredView: {
     flex: 1,
@@ -66,10 +77,9 @@ export const HomePageStyle = StyleSheet.create({
   },
   listItem: {
     width: "100%",
-    
   },
   favorites: {
-    display : "flex",
+    display: "flex",
     alignItems: "center",
     width: "90%",
   },
